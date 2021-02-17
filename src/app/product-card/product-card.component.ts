@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProductDataService } from '../product-data.service';
 
 @Component({
   selector: 'app-product-card',
@@ -8,8 +9,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductCardComponent implements OnInit {
   @Input() productData={};
  
-  constructor() {  }
+  constructor(private productDataService:ProductDataService) {  }
   ngOnInit(): void {
+  }
+  deleteObj(id:number)
+  {
+    this.productDataService.deleteProductById(id);
   }
 
 }

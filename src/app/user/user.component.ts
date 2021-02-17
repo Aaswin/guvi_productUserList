@@ -16,5 +16,9 @@ export class UserComponent implements OnInit {
     this.userObject=this.datauserService.getUsersById(this.activateduserRoute.snapshot.params.id);
   
   }
+  userDelete(id:any)
+  {
+    this.datauserService.deleteUserById(id);
+  }
 
 }

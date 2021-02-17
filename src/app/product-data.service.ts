@@ -44,4 +44,11 @@ export class ProductDataService {
   {
     return  this.data.find(p=>p.id==id);
   }
+  deleteProductById(i:any)
+  {
+
+   const j=this.data.findIndex(x=>x.id==i);
+    console.log(i,j,this.data[j]);
+   this.data.splice(j,1);
+  }
 }

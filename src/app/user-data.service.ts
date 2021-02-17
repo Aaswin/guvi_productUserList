@@ -50,4 +50,9 @@ export class UserDataService {
   {
     return  this.user_data.find(p=>p.id==id);
   }
+  deleteUserById(i:number)
+  {
+    const j=this.user_data.findIndex(x=>x.id==i);
+    this.user_data.splice(j,1);
+  }
 }

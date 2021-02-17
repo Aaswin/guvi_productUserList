@@ -1,4 +1,5 @@
 import { Input,Component, OnInit } from '@angular/core';
+import { UserDataService } from '../user-data.service';
 
 @Component({
   selector: 'app-user-card',
@@ -7,9 +8,13 @@ import { Input,Component, OnInit } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
   @Input() userData={};
-  constructor() { }
+  constructor(private userDataService:UserDataService) { }
 
   ngOnInit(): void {
+  }
+  deleteObj(id:number)
+  {
+    this.userDataService.deleteUserById(id);
   }
 
 }
