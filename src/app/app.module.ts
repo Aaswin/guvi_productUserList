@@ -15,6 +15,7 @@ import { UserListingComponent } from './user-listing/user-listing.component';
 import { UserCardComponent } from './user-card/user-card.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { UserComponent } from './user/user.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserComponent } from './user/user.component';
     UserListingComponent,
     UserCardComponent,
     CreateUserComponent,
-    UserComponent
+    UserComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

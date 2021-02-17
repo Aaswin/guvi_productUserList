@@ -8,7 +8,7 @@ export class UserDataService {
   user_data=[
     {
       id:1,
-      name:"pro1",
+      name:"user1",
       image:"http://placehold.it/200*200",
       age:200,
       email:"abc@xyz.com",
@@ -17,7 +17,7 @@ export class UserDataService {
     },
     {
       id:2,
-      name:"pro2",
+      name:"user2",
       image:"http://placehold.it/200*200",
       age:200,
       email:"abc@xyz.com",
@@ -25,7 +25,7 @@ export class UserDataService {
     },
     {
       id:3,
-      name:"pro3",
+      name:"user3",
       image:"http://placehold.it/200*200",
       age:200,
       email:"abc@xyz.com",
@@ -33,7 +33,7 @@ export class UserDataService {
     },
     {
       id:4,
-      name:"pro4",
+      name:"user4",
       image:"http://placehold.it/200*200",
       age:200,
       email:"abc@xyz.com",

@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeadevComponent } from './headev/headev.component';
 import { HomeComponent } from './home/home.component';
 import { ProductListingComponent } from './product-listing/product-listing.component';
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path:'create-user',
     component:CreateUserComponent
+  },
+  {
+    path:'dashboard',
+    component:DashboardComponent
   },
  
 ];
